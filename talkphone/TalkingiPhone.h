@@ -3,8 +3,9 @@
 @interface TalkingiPhone : NSObject
 @property (assign, nonatomic) NSString *phoneName;
 @property (assign, nonatomic) NSString *modelNumber;
+@property (assign) NSNumber *batteryLife;
 
-- (void) reportBatteryLife:(NSNumber *)batLife;
+- (void) reportBatteryLife;
 - (NSString *) speak:(NSString *)greeting;
 
 @end

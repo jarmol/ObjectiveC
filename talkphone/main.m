@@ -6,7 +6,10 @@ TalkingiPhone *talkingiPhone = [[TalkingiPhone alloc] init];
 talkingiPhone.phoneName = @"Hr. Huttunen";
 
 NSLog(@"%@", [talkingiPhone speak:@"Terse jäbä!"]);
-[talkingiPhone reportBatteryLife:@95];
+
+talkingiPhone.batteryLife = @100;
+
+[talkingiPhone reportBatteryLife];
 }
 // See lesson:
-// http://tryobjectivec.codeschool.com/levels/4/challenges/17
+// http://tryobjectivec.codeschool.com/levels/4/challenges/18

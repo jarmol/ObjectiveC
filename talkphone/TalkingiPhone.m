@@ -2,9 +2,9 @@
 
 @implementation TalkingiPhone
 
-- (void)reportBatteryLife:(NSNumber *)batLife;
+- (void)reportBatteryLife;
 {
-    NSLog(@"\nAkun varausta on jäljellä %@ %c", batLife,'%');
+    NSLog(@"\nAkun varausta on jäljellä %@ %c", self.batteryLife,'%');
 }
 
 - (NSString *)speak:(NSString *)greeting;
