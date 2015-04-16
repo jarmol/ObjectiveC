@@ -6,6 +6,7 @@
 @property (assign) NSNumber *batteryLife;
 
 - (void) reportBatteryLife;
+- (void) decreaseBatteryLife:(NSNumber *)decrement;
 - (NSString *) speak:(NSString *)greeting;
 
 @end
