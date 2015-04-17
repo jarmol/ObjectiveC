@@ -10,12 +10,12 @@
 
 - (void)reportBatteryLife;
 {
-    NSLog(@"\nAkun varausta on jäljellä %@ %c", self.batteryLife,'%');
+    NSLog(@"\nAkun varausta on jäljellä %@ %c", _batteryLife,'%');
 }
 
 - (void) decreaseBatteryLife:(NSNumber *)decrement;
 {
-  _batteryLife = @([self.batteryLife intValue] - [decrement intValue]);
+  _batteryLife = @([_batteryLife intValue] - [decrement intValue]);
 }
 
 - (NSString *)speak:(NSString *)greeting;
